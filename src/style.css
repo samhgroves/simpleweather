@@ -1,6 +1,9 @@
 body {
   font-family: "inter", sans-serif;
   font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #logo {
@@ -19,6 +22,14 @@ span {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 2px solid black;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+#city {
+  padding: 0.5rem;
 }
 
 input {
@@ -37,6 +48,7 @@ input {
 #unit > button {
   background-color: white;
   border: 0px;
+  font-weight: 400;
 }
 
 .active {
@@ -44,6 +56,28 @@ input {
 }
 
 #weather-info {
+  text-align: center;
+}
+
+#location {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+}
+
+#cond-temp {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+#condition,
+#temperature {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-weight: 400;
+}
+
+#icon {
+  width: 4rem;
 }

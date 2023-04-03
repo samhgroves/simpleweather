@@ -23,10 +23,12 @@ const submit = document.getElementById("submit");
 const location = document.getElementById("location");
 const condition = document.getElementById("condition");
 const temperature = document.getElementById("temperature");
+const iconImg = document.getElementById("icon");
 
 location.textContent = "Hogsmeade";
 condition.textContent = "Light snow";
 temperature.textContent = "25 F";
+iconImg.src = "//cdn.weatherapi.com/weather/64x64/night/113.png";
 
 const C = document.getElementById("c");
 const F = document.getElementById("f");
@@ -47,13 +49,14 @@ F.addEventListener("click", function () {
 submit.addEventListener("click", async function () {
   let data = await getTemp(input.value);
   location.textContent = data.name + ", " + data.region;
+  iconImg.src = data.icon;
   condition.textContent = data.condition;
   if (fahrenheit === true) {
     temperature.textContent = data.temperatureF + "F";
   } else {
     temperature.textContent = data.temperatureC + "C";
   }
-
+  console.log(data.icon);
   input.value = "";
 });
 
