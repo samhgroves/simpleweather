@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SimpleWeather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/28f244bc2a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 id="logo">Simple<span>Weather</span></h1>
+    <div id="form">
+      <div id="city">
+        <input id="input" type="text" placeholder="City or Zip" />
+        <button id="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div id="unit">
+        <button id="c">C</button>
+        <button id="f">F</button>
+      </div>
+    </div>
+    <div id="weather-info">
+      <h1 id="location"></h1>
+      <div id="condition"></div>
+      <div id="temperature"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+body {
+  font-family: "inter", sans-serif;
+  font-weight: 600;
+}
+
+#logo {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+span {
+  color: blue;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  height: 2rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#submit {
+  height: 2rem;
+  margin: 10px;
+  border-radius: 100px;
+  border: 1px solid black;
+}
+
+#unit > button {
+  background-color: white;
+  border: 0px;
+}
+
+.active {
+  color: blue;
+}
+
+#weather-info {
+  display: flex;
+  flex-direction: column;
+}
