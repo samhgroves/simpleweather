@@ -65,6 +65,7 @@ window.addEventListener("keydown", async function () {
     let data = await getTemp(input.value);
     location.textContent = data.name + ", " + data.region;
     condition.textContent = data.condition;
+    iconImg.src = data.icon;
     if (fahrenheit === true) {
       temperature.textContent = data.temperatureF + "F";
     } else {

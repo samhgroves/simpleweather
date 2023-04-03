@@ -4,6 +4,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(./background.jpg);
+  background-size: cover;
 }
 
 #logo {
@@ -14,7 +16,7 @@ body {
 }
 
 span {
-  color: blue;
+  color: #b7aef2;
 }
 
 #form {
@@ -26,6 +28,8 @@ span {
   width: fit-content;
   border-radius: 20px;
   padding: 1rem;
+  background-color: rgba(183, 174, 242, 0.5);
+  margin-bottom: 6rem;
 }
 
 #city {
@@ -36,33 +40,40 @@ input {
   height: 2rem;
   border-radius: 20px;
   text-align: center;
+  background-color: transparent;
+  color: black;
+  border-color: black;
 }
 
 #submit {
   height: 2rem;
   margin: 10px;
   border-radius: 100px;
-  border: 1px solid black;
+  border: 0px;
+  background-color: transparent;
 }
 
 #unit > button {
   background-color: white;
   border: 0px;
   font-weight: 400;
+  background-color: transparent;
 }
 
 .active {
-  color: blue;
+  color: #238c6e;
 }
 
 #weather-info {
   text-align: center;
+  background-color: rgba(242, 238, 235, 0.75);
+  border-radius: 25px;
 }
 
 #location {
   text-align: center;
-  font-weight: 600;
-  margin-top: 5rem;
+  font-size: 50px;
+  margin: 2rem;
   margin-bottom: 0rem;
 }
 
@@ -76,6 +87,7 @@ input {
   margin-left: 2rem;
   margin-right: 2rem;
   font-weight: 400;
+  margin-bottom: 2rem;
 }
 
 #icon {
